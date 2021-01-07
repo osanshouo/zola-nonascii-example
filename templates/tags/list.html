@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ja">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Zola in Japanese</title>
+  </head>
+  
+  <body>
+    <section>
+      {% for term in terms %}
+        <a href="{{ term.permalink }}">{{ term.name }}</a>
+      {% endfor %}
+    </section>
+  </body>
+
+</html>
